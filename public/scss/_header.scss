@@ -1,0 +1,21 @@
+.header {
+    height: 100px;
+    display: flex;
+    padding: $padding_20;
+    position: relative;
+
+    .logo {
+        margin: auto auto auto 0;
+
+        img{
+            height: 75px;
+            width:auto;
+        }
+    }
+}
+
+.main_header{
+    position: absolute;
+    width: calc(100% - 40px);
+    z-index: 10000;
+}

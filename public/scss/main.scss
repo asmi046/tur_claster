@@ -1,3 +1,13 @@
+@import "vars";
+@import "null";
+@import "fonts";
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
 .no_show {
     display: none;
 }
@@ -5,3 +15,9 @@
 h1{
     color:yellow;
 }
+
+@import "header";
+@import "icon-menu";
+@import "banner_slider";
+@import "events";
+@import "event-element";

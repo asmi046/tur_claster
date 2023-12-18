@@ -1,0 +1,60 @@
+.events_section {
+
+    h2{
+        margin-left: 15%;
+    }
+
+    .carusel_wrapper {
+        min-height: 200px;
+        display: flex;
+        max-width: 100%;
+        .control {
+            width:15%;
+            background-color: $main_clr;
+            display: flex;
+            .btns {
+                display: flex;
+                flex-direction: column;
+                width: 30px;
+                height: 100%;
+                margin-left: auto;
+
+                button {
+                    width:30px;
+                    height: 70px;
+                    background-image: url(../img/icon/arrow_white.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                .next_event_btn {
+                    margin-top: 0;
+                }
+
+                .circle {
+                    width:10px;
+                    height:10px;
+                    border-radius: 10px;
+                    border: 1px solid white;
+                    margin: auto;
+                }
+                .prev_event_btn {
+                    margin-bottom: 0;
+                    margin-top: auto;
+                }
+            }
+        }
+
+        .slodes {
+            flex:1;
+            max-width: 83%;
+            margin-left: 2%;
+
+            swiper-slide {
+                background-color: red;
+            }
+        }
+
+    }
+}

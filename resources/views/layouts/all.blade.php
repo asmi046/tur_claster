@@ -6,15 +6,15 @@
     <title>@yield('title')</title>
     <meta name="description" content="@yield('description')">
 
-    <meta property="og:locale" content="ru_RU" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="@yield('title')" />
-    <meta property="og:description" content="@yield('description')" />
-    <meta property="og:url" content="{{route('home')}}" />
-    <meta property="og:site_name" content="Студия звукозаписи ЭПИЦЕНТР ZVUK.FM" />
-    <meta property="og:image" content="{{asset('img/og_img.jpg')}}" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:locale" content="ru_RU" >
+    <meta property="og:type" content="website" >
+    <meta property="og:title" content="@yield('title')" >
+    <meta property="og:description" content="@yield('description')" >
+    <meta property="og:url" content="{{route('home')}}" >
+    <meta property="og:site_name" content="Студия звукозаписи ЭПИЦЕНТР ZVUK.FM" >
+    <meta property="og:image" content="{{asset('img/og_img.jpg')}}" >
+    <meta property="og:image:type" content="image/jpeg" >
+    <meta name="twitter:card" content="summary_large_image">
 
     <link rel="icon" type="image/png" href="{{asset('/img/favicons/icon256.png')}}" sizes="256x256">
     <link rel="icon" type="image/png" href="{{asset('/img/favicons/icon128.png')}}" sizes="128x128">
@@ -33,16 +33,19 @@
 </head>
 <body>
 
-    <header @class(['header', 'main_header' => Route::currentRouteName() === 'accepted-npa'])>
-        <a href="#">
-            <img src="{{ asset('img/logo.csv') }}" alt="Туристический кластер Курской области">
+    <header @class(['header', 'main_header' => Route::currentRouteName() === 'home'])>
+        <a class="logo" href="#">
+            <img src="{{ asset('img/logo.svg') }}" alt="Туристический кластер Курской области">
         </a>
 
-        <button type="button" class="icon-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+        <div class="icon-menu_wrapper">
+            <button type="button" class="icon-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
     </header>
 
     <main>
