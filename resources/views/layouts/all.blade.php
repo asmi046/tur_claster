@@ -33,7 +33,25 @@
 </head>
 <body>
 
-    @yield('main')
+    <header @class(['header', 'main_header' => Route::currentRouteName() === 'accepted-npa'])>
+        <a href="#">
+            <img src="{{ asset('img/logo.csv') }}" alt="Туристический кластер Курской области">
+        </a>
+
+        <button type="button" class="icon-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        @yield('main')
+    </main>
+
+    <footer>
+
+    </footer>
 
 </body>
 </html>
