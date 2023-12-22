@@ -5,7 +5,7 @@
     <div class="text_wrap">
         <p class="date">{{$date}}</p>
         <p class="time">{{$time}}</p>
-        <h2 class="name">{{$name}}</h2>
-        <a href="">Подробнее</a>
+        <h3 class="name">{{$name}}</h2>
+        <a class="arrow_lnk" href="#">Подробнее</a>
     </div>
 </article>

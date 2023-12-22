@@ -8,6 +8,12 @@ body {
     font-size: 16px;
 }
 
+a:before,
+a:after,
+a{
+    transition: all .4s ease
+}
+
 .no_show {
     display: none;
 }
@@ -16,8 +22,40 @@ h1{
     color:yellow;
 }
 
+section {
+    h2{
+        font-size:40px
+    }
+}
+
+
+
+.arrow_lnk {
+    color:$main_clr;
+    font-size: 14px;
+    position: relative;
+    padding-right: 47px;
+
+    &:hover::after {
+        content: "";
+        right: 0;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        height: 10px;
+        width:33px;
+        right: 5px;
+        top:5px;
+        background-image: url(../img/icon/arrow.svg);
+        background-position: center;
+        background-repeat: no-repeat
+    }
+}
+
 @import "header";
 @import "icon-menu";
 @import "banner_slider";
 @import "events";
 @import "event-element";
+@import "presentation-blk";

@@ -1,14 +1,24 @@
 .bnr_slide {
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: end;
 
     .text{
         width:35%;
         display: flex;
+        max-width: 490px;
 
         &_wrapper {
-            margin:  30% auto auto 20px;
+            margin:  50% auto auto 20px;
+            font-weight: 100;
+            font-size: 42px;
+
+            h2{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 84px;
+                line-height: 1;
+                margin-top: 0.3em;
+            }
         }
     }
 

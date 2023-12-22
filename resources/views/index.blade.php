@@ -12,13 +12,13 @@
     <section class="ban_er">
         <div class="container">
             <h1 class="no_show">АНО "Центр развития туристических кластеров Курской Области"</h1>
-            <swiper-container pagination="true" pagination-clickable="true" slides-per-view="1">
+            <swiper-container id="main_slider" pagination="true" pagination-clickable="true" slides-per-view="1">
                 <swiper-slide>
                     <article class="bnr_slide">
                         <div class="text">
                             <div class="text_wrapper">
                                 <p>Этнографический <br>комплекс</p>
-                                <h2>«Парк мельниц»</h2>
+                                <h2>Парк «Мельниц»</h2>
                             </div>
 
                         </div>
@@ -52,13 +52,13 @@
         <div class="carusel_wrapper">
             <div class="control">
                 <div class="btns">
-                    <button class = "next_event_btn"></button>
+                    <button id="next_event_btn" class = "next_event_btn"></button>
                     <div class="circle"></div>
-                    <button class = "prev_event_btn"></button>
+                    <button id="prev_event_btn" class = "prev_event_btn"></button>
                 </div>
             </div>
             <div class="slodes">
-                    <swiper-container slides-per-view="5" space-between="30" >
+                    <swiper-container id="event_slider" slides-per-view="5" space-between="30" >
                         @for ($i=0; $i<10; $i++)
                             <swiper-slide>
                                 <x-event

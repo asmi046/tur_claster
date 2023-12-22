@@ -9,7 +9,8 @@ export default defineConfig({
             input: [
                 'resources/css/app.css',
                 'public/scss/main.scss',
-                'resources/js/app.js'
+                'resources/js/app.js',
+                'public/js/main.js'
             ],
             refresh: true,
         }),
