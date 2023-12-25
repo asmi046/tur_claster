@@ -11,7 +11,7 @@
     <meta property="og:title" content="@yield('title')" >
     <meta property="og:description" content="@yield('description')" >
     <meta property="og:url" content="{{route('home')}}" >
-    <meta property="og:site_name" content="Студия звукозаписи ЭПИЦЕНТР ZVUK.FM" >
+    <meta property="og:site_name" content="Центр развития туристических кластеров Курской Области" >
     <meta property="og:image" content="{{asset('img/og_img.jpg')}}" >
     <meta property="og:image:type" content="image/jpeg" >
     <meta name="twitter:card" content="summary_large_image">
@@ -36,8 +36,8 @@
 <body>
     <x-mobile-menu></x-mobile-menu>
 
-    <header @class(['header', 'main_header' => Route::currentRouteName() === 'home'])>
-        <a class="logo" href="#">
+    <header @class(['header', 'main_header' => Route::currentRouteName() === 'home', 'no_main_header' => Route::currentRouteName() !== 'home'])>
+        <a class="logo" href="{{ route('home') }}">
             <img src="{{ asset('img/logo.svg') }}" alt="Туристический кластер Курской области">
         </a>
 

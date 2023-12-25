@@ -20,6 +20,17 @@
     z-index: 10000;
 }
 
+.no_main_header{
+    position: relative;
+    width: calc(100% - 40px);
+    box-shadow: 0 0 5px #0000004d;
+
+    .icon-menu_wrapper {
+        top:calc(50px - 17px)
+    }
+}
+
+
 
 @media (max-width:1024px) {
     .header {

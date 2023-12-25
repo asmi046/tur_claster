@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\EasyPageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,4 @@ use App\Http\Controllers\IndexController;
 */
 
 Route::get('/', [IndexController::class, "index"])->name('home');
+Route::get('/contacts', [EasyPageController::class, "contacts"])->name('contacts');
