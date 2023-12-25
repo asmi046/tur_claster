@@ -10,7 +10,8 @@ export default defineConfig({
                 'resources/css/app.css',
                 'public/scss/main.scss',
                 'resources/js/app.js',
-                'public/js/main.js'
+                'public/js/main.js',
+                'public/js/mob-menu.js'
             ],
             refresh: true,
         }),

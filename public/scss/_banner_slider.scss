@@ -11,11 +11,11 @@
         &_wrapper {
             margin:  50% auto auto 20px;
             font-weight: 100;
-            font-size: 42px;
+            font-size: 52px;
 
             h2{
                 font-family: 'Times New Roman', Times, serif;
-                font-size: 84px;
+                font-size: 94px;
                 line-height: 1;
                 margin-top: 0.3em;
             }
@@ -32,9 +32,63 @@
             margin: auto 0 auto auto;
         }
     }
+
+
 }
 
+@media (max-width:1920px) {
+    .bnr_slide .text_wrapper {
+            font-size: 42px;
+    }
 
+    .bnr_slide .text_wrapper h2 {
+        font-size: 82px;
+    }
+}
+
+@media (max-width:1280px) {
+    .bnr_slide .text_wrapper {
+            font-size: 32px;
+    }
+
+    .bnr_slide .text_wrapper h2 {
+        font-size: 62px;
+    }
+}
+
+@media (max-width:1024px) {
+    .bnr_slide .text_wrapper {
+            font-size: 28px;
+    }
+
+    .bnr_slide .text_wrapper h2 {
+        font-size: 52px;
+    }
+}
+
+@media (max-width:1024px) {
+    .bnr_slide .text_wrapper {
+            font-size: 18px;
+    }
+
+    .bnr_slide .text_wrapper h2 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width:480px) {
+    .bnr_slide {
+        flex-direction: column-reverse;
+
+        .img,
+        .text {
+            width:100%;
+        }
+        .text_wrapper {
+            margin: 20px auto 30px 20px;
+        }
+    }
+}
 
 
 
@@ -57,3 +111,4 @@ swiper-container::part(bullet-active) {
     width:10px;
     height: 10px;
 }
+

@@ -77,11 +77,12 @@
     </section>
 
     <section class="presentation_section">
+        <img src="{{ asset('img/present_bg.webp') }}" alt="Презентация">
         <div class="message">
             <div class="icon"></div>
             <div class="text">
                 <h2>Презентация этнографического комплекса «Парк мельниц»</h2>
-                <a href="#">Прейти к презентации</a>
+                <a class="arrow_lnk white" href="#">Прейти к презентации</a>
             </div>
         </div>
     </section>

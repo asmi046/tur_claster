@@ -18,18 +18,33 @@
                 width: 30px;
                 height: 100%;
                 margin-left: auto;
+                margin-right: 5px;
 
                 button {
+                    position: relative;
+                }
+
+                button:before {
+                    content: "";
+                    position: absolute;
+                    left:0;
                     width:30px;
                     height: 70px;
                     background-image: url(../img/icon/arrow_white.svg);
                     background-repeat: no-repeat;
                     background-position: center;
-                    background-size: cover;
+                    background-size: contain;
+                    cursor: pointer;
+                    transition: all 0.4s ease;
                 }
 
-                .next_event_btn {
-                    margin-top: 0;
+                .next_event_btn::before {
+                    content: "";
+                    top: 20px;
+                }
+
+                .next_event_btn:hover::before {
+                    top: 15px;
                 }
 
                 .circle {
@@ -39,9 +54,15 @@
                     border: 1px solid white;
                     margin: auto;
                 }
-                .prev_event_btn {
-                    margin-bottom: 0;
-                    margin-top: auto;
+
+                .prev_event_btn::before {
+                    content: "";
+                    bottom: 20px;
+                    transform: rotate(180deg);
+                }
+
+                .prev_event_btn:hover::before {
+                    bottom: 15px;
                 }
             }
         }
@@ -50,11 +71,14 @@
             flex:1;
             max-width: 83%;
             margin-left: 2%;
-
-            swiper-slide {
-                background-color: red;
-            }
         }
 
+    }
+}
+
+
+@media (max-width:480px) {
+    .events_section h2 {
+        margin-left: 20px;
     }
 }

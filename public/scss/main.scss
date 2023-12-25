@@ -28,6 +28,15 @@ section {
     }
 }
 
+@media (max-width:480px) {
+
+    section {
+        h2{
+            font-size:24px;
+        }
+    }
+}
+
 
 
 .arrow_lnk {
@@ -40,6 +49,10 @@ section {
         content: "";
         right: 0;
     }
+    &.white{
+        color: white;
+    }
+
     &::after{
         content: "";
         position: absolute;
@@ -51,11 +64,18 @@ section {
         background-position: center;
         background-repeat: no-repeat
     }
+
+    &.white::after{
+        background-size: contain;
+        background-image: url(../img/icon/arrow_white_right.svg);
+    }
 }
 
+@import "scroll";
 @import "header";
 @import "icon-menu";
 @import "banner_slider";
 @import "events";
 @import "event-element";
 @import "presentation-blk";
+@import "mobile-menu";

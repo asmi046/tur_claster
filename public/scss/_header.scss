@@ -19,3 +19,19 @@
     width: calc(100% - 40px);
     z-index: 10000;
 }
+
+
+@media (max-width:1024px) {
+    .header {
+        height: 60px;
+        box-shadow: 0 0 5px #0000004d;
+        .logo img {
+            height: 45px;
+        }
+    }
+
+    .main_header{
+        position: relative;
+    }
+
+}

@@ -29,10 +29,12 @@
         'resources/css/app.css',
         'public/scss/main.scss',
         'resources/js/app.js',
-        'public/js/main.js'
+        'public/js/main.js',
+        'public/js/mob-menu.js'
     ])
 </head>
 <body>
+    <x-mobile-menu></x-mobile-menu>
 
     <header @class(['header', 'main_header' => Route::currentRouteName() === 'home'])>
         <a class="logo" href="#">
