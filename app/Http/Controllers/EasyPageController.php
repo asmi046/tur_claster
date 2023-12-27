@@ -20,4 +20,24 @@ class EasyPageController extends Controller
         return view('contacts');
     }
 
+    public function about() {
+        return view('about');
+    }
+
+    public function event() {
+        return view('event');
+    }
+
+    public function faq() {
+        return view('faq');
+    }
+
+    public function gk() {
+        return view('gk');
+    }
+
+    public function melnitsa() {
+        return view('melnitsa');
+    }
+
 }

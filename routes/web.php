@@ -18,3 +18,8 @@ use App\Http\Controllers\EasyPageController;
 
 Route::get('/', [IndexController::class, "index"])->name('home');
 Route::get('/contacts', [EasyPageController::class, "contacts"])->name('contacts');
+Route::get('/about', [EasyPageController::class, "about"])->name('about');
+Route::get('/event', [EasyPageController::class, "event"])->name('event');
+Route::get('/faq', [EasyPageController::class, "faq"])->name('faq');
+Route::get('/gk', [EasyPageController::class, "gk"])->name('gk');
+Route::get('/melnitsa', [EasyPageController::class, "melnitsa"])->name('melnitsa');
