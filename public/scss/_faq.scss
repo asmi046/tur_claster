@@ -1,0 +1,46 @@
+.faq_section {
+    text-align: center;
+    margin:40px 20px;
+}
+.faq {
+    display:  flex;
+    flex-direction: column;
+
+    details {
+        margin: 0 auto 20px auto;
+        width: 100%;
+        max-width: 700px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        text-align:  left;
+
+        &[open] {
+            border-color: $main_clr;
+        }
+
+        summary {
+            padding: 10px 80px 10px 30px;
+            list-style: none;
+            cursor: pointer;
+            position: relative;
+        }
+
+        summary::after {
+            content: "";
+            position: absolute;
+            height: 10px;
+            width:33px;
+            right: 25px;
+            top:15px;
+            background-image: url(../img/icon/arrow.svg);
+            background-position: center;
+            background-repeat: no-repeat
+
+        }
+
+        .response {
+            padding: 10px 30px;
+            color: $main_clr;
+        }
+    }
+}

@@ -1,6 +1,7 @@
 @import "vars";
 @import "null";
 @import "fonts";
+@import "text-styles";
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -71,6 +72,16 @@ section {
     }
 }
 
+.about_in_main {
+    text-align: center;
+    .container {
+        max-width: 1240px;
+        padding: 0 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @import "scroll";
 @import "header";
 @import "icon-menu";
@@ -79,3 +90,5 @@ section {
 @import "event-element";
 @import "presentation-blk";
 @import "mobile-menu";
+@import "faq";
+@import "footer";
